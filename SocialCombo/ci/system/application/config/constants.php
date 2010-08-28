@@ -38,17 +38,17 @@ define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
 // SET CONFIG VARS FOR FB APP
-define('FACEBOOK_APP_ID', '641eab663bce2bcd786e7757ecf7145e');
-define('FACEBOOK_SECRET', '22f1e4a2314e0013619a8d6bc4b326f8');
+define('FACEBOOK_APP_ID', '<API KEY>');
+define('FACEBOOK_SECRET', '<SECRET>');
 
 // SET CONFIG VARS FOR TWITTER APP
-define('CONSUMER_KEY', 'iYzIflyVxkXQvcFLvSdPTw');
-define('CONSUMER_SECRET', 'IfnxaLwvoJ22du8QOIT1bsXclLvZtycv0waW6DXHJDg');
+define('CONSUMER_KEY', '<CONSUMER KEY>');
+define('CONSUMER_SECRET', '<SECRET KEY>');
 define('OAUTH_CALLBACK', 'http://localhost/ci/index.php/image_upload');
 
-define('TWITPIC_API_KEY', 'efe2b4b107bf5f965002d7d04a32f16d');
+define('TWITPIC_API_KEY', '<API KEY>');
 
-define('JANRAIN_API_KEY', '6c9cf85ada920b11f72dd3a38dfdefd98d17b2bd');
+define('JANRAIN_API_KEY', '<API KEY>');
 define('JANRAIN_API_URL', 'https://rpxnow.com/api/v2/auth_info');
 
 /* End of file constants.php */
