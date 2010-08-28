@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+ <head>
+  <title> New Document </title>
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+ </head>
+
+<body>
+<form method=post action="">
+	<div id="user_id">
+		Name: <input type="text" name="Name"><br>
+		<fb:login-button length="long" onlogin="update_user_box();"></fb:login-button>
+	</div>
+  Comment: <textarea name="" rows="3" cols="60"></textarea><br>
+  <input type="submit">
+</form>
+
+<script type="text/javaScript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php"></script>
+
+<script type="text/javaScript">
+<!--
+	function update_user_box()
+	{
+		alert("update_user_box Called");
+		var user_box = document.getElementById('user_id');
+	
+		user_box.innerHTML =
+			"<span>"
+		+	"<fb:profile-pic uid='loggedinuser' facebook-logo='true'></fb:profile-pic>"
+		+ "</span>";
+
+		FB.api('/me', function(response) {
+		 alert(response.name);
+		});
+
+		FB.XFBML.Host.parseDomTree();
+	}
+	alert("start init");
+	FB.init('6a580d9b13c8472613c0a22e846f6a1b','xd_receiver.html');
+	alert("end init");
+	FB.ensureInit ( function () {
+        FB.Connect.ifUserConnected(update_user_box);});
+	alert("end");
+	
+
+
+//-->
+</script>
+
+</body>
+</html>
