@@ -3,7 +3,7 @@ Directory Structure:
 MyProject/*		-> Java Web Service
 ci/*			-> Codeigniter Framework for PHP application
 ci/system/application/	-> PHP code for the website
-msapp_db_dump.sql	-> Dump of the database we used for storing the tokens
+msapp_db_dump.sql	-> Dump of the database we used for storing tokens
 
 - If you already have the Web Server running (we had WAMP), you just need to dump the ci directory in www or htdocs folder and you should be able to access the website.
 
